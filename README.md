@@ -4,3 +4,4 @@
 # qa-api-tests-postman
 # qa-api-tests-postman
 # qa-cypress-ci-cd
+# qa-bug-tracking
