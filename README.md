@@ -1,7 +1,17 @@
-# qa-cypress-real-tests
-# qa-cypress-real-tests
-# qa-test-documentation
-# qa-api-tests-postman
-# qa-api-tests-postman
-# qa-cypress-ci-cd
-# qa-bug-tracking
+name: Cypress Tests
+
+on: [push]
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Cypress tests
+        run: npx cypress run
